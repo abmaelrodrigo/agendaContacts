@@ -10,6 +10,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import support.Web;
 
 import java.util.concurrent.TimeUnit;
 
@@ -20,6 +21,8 @@ public class CreateANewContact {
 
     @Before
     public void setup(){
+        browser = Web.createChrome();
+
         System.setProperty("webdriver.chrome.driver","/Users/abmaelrodrigo/drivers/chromedriver");
         browser = new ChromeDriver();
 
