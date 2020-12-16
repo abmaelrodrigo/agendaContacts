@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 
 @RunWith(DataDrivenTestRunner.class)
 @DataLoader(filePaths = "CreateANewContact.csv")
-public class CreateANewContact {
+public class CreateANewContactTest {
     private WebDriver browser;
 
     @Before
@@ -49,7 +49,7 @@ public class CreateANewContact {
     }
     @Test
     public void testAdicionarumNovoContato(@Param(name = "name")String name,@Param(name = "phone")String phone){
-        //Click on the button 'Novo contato' atravé de seu id novo-contato
+        //Click on the button 'Novo contato' através de seu id novo-contato
         browser.findElement(By.id("novo-contato")).click();
 
         //Identifying the popup window where there is the id popup-criar-contato
