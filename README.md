@@ -11,4 +11,7 @@ This project consists on automating the process of inserting a new contact on th
 7 - Insert an email;
 8 – Click on ‘Create a new contact’.
 
-The same project was also rewritten using the Page Objects technique (https://github.com/SeleniumHQ/selenium/wiki/PageObjects).
+->Important:
+  1 - The same project was also rewritten using the Page Objects technique (https://github.com/SeleniumHQ/selenium/wiki/PageObjects).
+  2 - A cloud platform (https://automate.browserstack.com/) was used to run the tests in another server. 
+

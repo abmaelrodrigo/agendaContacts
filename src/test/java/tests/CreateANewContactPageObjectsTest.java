@@ -18,7 +18,8 @@ public class CreateANewContactPageObjectsTest {
 
     @Before
     public void setUp(){
-        browser = Web.createChrome();
+        //browser = Web.createChrome();
+        browser = Web.createBrowserStack();
     }
 
     @Test
@@ -33,8 +34,8 @@ public class CreateANewContactPageObjectsTest {
                 .createNewContact(name,phone,addEmail);
     }
 
-   /* @After
+    @After
     public void tearDown(){
         browser.quit();
-    }*/
+    }
 }
