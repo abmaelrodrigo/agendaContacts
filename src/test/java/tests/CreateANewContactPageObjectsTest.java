@@ -11,20 +11,19 @@ public class CreateANewContactPageObjectsTest {
     private WebDriver browser;
 
     @Before
-    private void setUp(){
+    public void setUp(){
         browser = Web.createChrome();
     }
 
     @Test
-    private void testAdicionarumNovoContato(){
+    public void testAdicionarumNovoContato(){
         new LoginPage(browser)
-                .clickSignIn()
-                .typeLogin("abmaelrodrigo@outlook.com");
-
+                .clickLogIn().doLogin("abmaelrodrigo@outlook.com","abmaelcontactos91")
+                .createNewContact("Ferraz H.","9812563252");
     }
 
-    @After
-    private void tearDown(){
+   /* @After
+    public void tearDown(){
         browser.quit();
-    }
+    }*/
 }

@@ -1,4 +1,4 @@
-testAdicionarumNovoContato,name,phone,Duration(ms)
-"",Almeida G.,+559812344321,1350.0
-"",Gilberto B.,+559812344322,1684.0
-"",Carol K..,+559812344323,2469.0
+testAdicionarumNovoContato,name,phone
+                          ,Almeida G.,+559812344321
+                          ,Gilberto B.,+559812344322
+                          ,Carol K..,+559812344323
