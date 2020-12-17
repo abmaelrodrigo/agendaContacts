@@ -1,4 +1,4 @@
-testAdicionarumNovoContato,email,password,name,phone,Duration(ms)
-"",abmaelrodrigo@outlook.com,abmaelcontactos91,Almeida G.,+559812344321,2249.0
-"",abmaelrodrigo@outlook.com,abmaelcontactos91,Gilberto B.,+559812344322,4679.0
-"",abmaelrodrigo@outlook.com,abmaelcontactos91,Carol K.,+559812344323,2625.0
+testAdicionarumNovoContato,email,password,name,phone,addEmail,Duration(ms)
+"",abmaelrodrigo@outlook.com,abmaelcontactos91,Almeida G.,9812344321,almeidag@test.com,2431.0
+"",abmaelrodrigo@outlook.com,abmaelcontactos91,Gilberto B.,9812344322,gilbertob@test.com,3397.0
+"",abmaelrodrigo@outlook.com,abmaelcontactos91,Carol K.,9812344323,carolk@test.com,2979.0

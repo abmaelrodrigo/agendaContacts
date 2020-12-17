@@ -1,4 +1,4 @@
-testAdicionarumNovoContato,email,password,name,phone
-                          ,"abmaelrodrigo@outlook.com","abmaelcontactos91",Almeida G.,+559812344321
-                          ,"abmaelrodrigo@outlook.com","abmaelcontactos91",Gilberto B.,+559812344322
-                          ,"abmaelrodrigo@outlook.com","abmaelcontactos91",Carol K.,+559812344323
+testAdicionarumNovoContato,email,password,name,phone,addEmail
+                          ,abmaelrodrigo@outlook.com,abmaelcontactos91,Almeida G.,9812344321,almeidag@test.com
+                          ,abmaelrodrigo@outlook.com,abmaelcontactos91,Gilberto B.,9812344322,gilbertob@test.com
+                          ,abmaelrodrigo@outlook.com,abmaelcontactos91,Carol K.,9812344323,carolk@test.com

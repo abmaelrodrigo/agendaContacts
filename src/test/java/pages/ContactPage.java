@@ -25,15 +25,21 @@ public class ContactPage extends BasePage{
         return this;
     }
 
+    public ContactPage typeEmail(String addEmail){
+        browser.findElement(By.id("popup-criar-contato")).findElement(By.xpath("//input[@name=\"web[]\"]")).sendKeys(addEmail);
+        return this;
+    }
+
     public ContactPage createContact(){
         browser.findElement(By.id("popup-criar-contato")).findElement(By.className("botao-1")).click();
         return this;
     }
 
-    public ContactPage createNewContact(String name, String phone){
+    public ContactPage createNewContact(String name, String phone, String addEmail){
         clickNewContact();
         typeName(name);
         typePhone(phone);
+        typeEmail(addEmail);
         createContact();
         return this;
     }

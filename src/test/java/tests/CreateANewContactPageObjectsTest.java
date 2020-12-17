@@ -22,10 +22,15 @@ public class CreateANewContactPageObjectsTest {
     }
 
     @Test
-    public void testAdicionarumNovoContato(@Param(name = "email")String email,@Param(name = "password")String password,@Param(name = "name")String name, @Param(name = "phone")String phone){
+    public void testAdicionarumNovoContato(
+            @Param(name = "email")String email,
+            @Param(name = "password")String password,
+            @Param(name = "name")String name,
+            @Param(name = "phone")String phone,
+            @Param(name = "addEmail")String addEmail){
         new LoginPage(browser)
                 .clickLogIn().doLogin(email,password)
-                .createNewContact(name,phone);
+                .createNewContact(name,phone,addEmail);
     }
 
    /* @After

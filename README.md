@@ -6,7 +6,9 @@ This project consists on automating the process of inserting a new contact on th
 2 – Click on login;
 3 – Enter valid username and password;
 4 – Click on ‘Register a new contact’ ;
-5 – Insert some name and phone;
-6 – Click on ‘Create a new contact’.
+5 – Insert a name;  
+6 - Insert a phone;
+7 - Insert an email;
+8 – Click on ‘Create a new contact’.
 
 The same project was also rewritten using the Page Objects technique (https://github.com/SeleniumHQ/selenium/wiki/PageObjects).
