@@ -11,8 +11,8 @@ public class LoginFormPage extends BasePage {
     }
 
     //structural approach
-    public LoginFormPage typeName(String name){
-        browser.findElement(By.className("popup")).findElement(By.id("login-email")).sendKeys(name);
+    public LoginFormPage typeName(String email){
+        browser.findElement(By.className("popup")).findElement(By.id("login-email")).sendKeys(email);
         return this;
     }
 
@@ -27,8 +27,8 @@ public class LoginFormPage extends BasePage {
     }
 
     //functional approach
-    public ContactPage doLogin(String name, String password){
-        typeName(name);
+    public ContactPage doLogin(String email, String password){
+        typeName(email);
         typePassword(password);
         clickSignIn();
 

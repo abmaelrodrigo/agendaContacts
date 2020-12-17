@@ -1,12 +1,18 @@
 package tests;
 
+import org.easetech.easytest.annotation.DataLoader;
+import org.easetech.easytest.annotation.Param;
+import org.easetech.easytest.runner.DataDrivenTestRunner;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import pages.LoginPage;
 import support.Web;
 
+@RunWith(DataDrivenTestRunner.class)
+@DataLoader(filePaths = "CreateANewContactPageObjectsTest.csv")
 public class CreateANewContactPageObjectsTest {
     private WebDriver browser;
 
@@ -16,10 +22,10 @@ public class CreateANewContactPageObjectsTest {
     }
 
     @Test
-    public void testAdicionarumNovoContato(){
+    public void testAdicionarumNovoContato(@Param(name = "email")String email,@Param(name = "password")String password,@Param(name = "name")String name, @Param(name = "phone")String phone){
         new LoginPage(browser)
-                .clickLogIn().doLogin("abmaelrodrigo@outlook.com","abmaelcontactos91")
-                .createNewContact("Ferraz H.","9812563252");
+                .clickLogIn().doLogin(email,password)
+                .createNewContact(name,phone);
     }
 
    /* @After
