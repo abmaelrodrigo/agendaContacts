@@ -1,0 +1,7 @@
+pages/LoginFormPage.class
+pages/ContactPage.class
+tests/CreateANewContactPageObjectsTest.class
+pages/BasePage.class
+support/Web.class
+tests/CreateANewContactTest.class
+pages/LoginPage.class

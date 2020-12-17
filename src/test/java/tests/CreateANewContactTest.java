@@ -28,7 +28,7 @@ public class CreateANewContactTest {
 
         browser.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-        //open the page https://mockflow.com/
+        //open the page https://agendap.com/
         browser.get("https://agendap.com/");
 
         //Click on the button Login

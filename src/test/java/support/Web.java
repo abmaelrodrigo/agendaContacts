@@ -42,7 +42,7 @@ public class Web {
              browser = new RemoteWebDriver(new URL(URLBrowserStack), caps);
              browser.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-            //open the page https://mockflow.com/
+            //open the page https://agendap.com/
              browser.get("https://agendap.com/");
 
         } catch (MalformedURLException e) {
